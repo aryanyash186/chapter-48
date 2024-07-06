@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+@layer utilities {
+  /* header */
+  .header {
+    @apply md:px-16 px-2 md:py-4 py-2;
+  }
+  .navbar {
+    @apply flex items-center justify-between;
+  }
+  .unorderlist {
+    @apply flex md:gap-x-6 gap-x-2;
+  }
+  .list {
+    @apply text-xs md:text-base;
+  }
+  .darkbtn {
+    @apply flex md:gap-x-5 gap-x-2 items-center;
+  }
+  .orangebtn {
+    @apply bg-[#F44335] text-white md:py-2 py-1 md:px-5 px-2 rounded-md text-xs md:text-base;
+  }
+  /* banner */
+  .banner {
+    @apply md:px-28 px-5 grid grid-cols-12;
+  }
+  .gridcol {
+    @apply md:col-span-6 col-span-12;
+  }
+  .text5 {
+    @apply font-bold md:text-lg text-xs md:pb-4 pb-3 md:pt-6;
+  }
+  .text1 {
+    @apply md:text-7xl text-3xl font-bold;
+  }
+  .orangeborder {
+    @apply border-b md:border-b-[2px] border-b-[#F44335];
+  }
+  .paragraph1 {
+    @apply md:pb-10 text-wrap pb-5 md:w-10/12 w-96;
+  }
+  .others {
+    @apply flex justify-between pr-20 md:pb-10 pb-5;
+  }
+  .text4 {
+    @apply text-[#00FF84] font-bold text-lg;
+  }
+  .whitebtn {
+    @apply bg-white md:py-2 py-1 md:px-5 px-2 rounded-md text-xs md:text-base border;
+  }
+  /* logo */
+  .logo {
+    @apply flex justify-between md:px-28 px-5 items-center md:pb-20 pb-10;
+  }
+  .logopara {
+    @apply md:w-64 w-40 text-[10px] md:text-base;
+  }
+  .scaleimg {
+    @apply scale-90 md:scale-100;
+  }
+  /* skill */
+  .skill {
+    @apply md:px-28 px-5 grid grid-cols-12 md:pb-20 md:gap-x-8 gap-x-0 gap-y-12 md:gap-y-0;
+  }
+  .learndiv {
+    @apply shadow-lg md:px-8 px-4 md:pb-10 pb-6 md:pt-7 pt-4 rounded-2xl;
+  }
+  .text3 {
+    @apply md:text-2xl text-lg font-bold md:pb-5 pb-3 border-b md:border-b-[2px] border-b-[#F9CCC7]  dark:text-white;
+  }
+  .learnflex {
+    @apply flex flex-col md:gap-y-12 gap-y-7 md:pt-7 pt-4;
+  }
+  .checkbg {
+    @apply bg-[#F9CCC7] md:size-10 size-7 rounded-full flex items-center justify-center;
+  }
+  .checkpara {
+    @apply w-11/12 text-xs md:text-base text-wrap  dark:text-white;
+  }
+  .skilldiv {
+    @apply shadow-lg md:px-8 px-4 md:pt-3 pt-1 md:pb-10 pb-6 rounded-2xl;
+  }
+  .optionbtn {
+    @apply flex flex-wrap md:gap-3 gap-2 dark:text-white;
+  }
+  .optnbtnbr {
+    @apply border border-[#F44335] rounded-full py-1 px-3 text-xs md:text-base;
+  }
+  /* certificate */
+  .certificate {
+    @apply md:px-28 px-5 grid grid-cols-12 md:pb-20 md:gap-x-8 gap-x-0 gap-y-12 md:gap-y-0 pt-16 md:py-0;
+  }
+  .certificatediv {
+    @apply shadow-lg md:px-5 px-3 md:pb-2 md:pt-4 pt-2 rounded-2xl pb-4;
+  }
+  .certificatedivflx {
+    @apply md:pt-5 pt-3 flex justify-between;
+  }
+  .flexitem {
+    @apply flex gap-2 items-center;
+  }
+  .textbase {
+    @apply text-xs md:text-base dark:text-white;
+  }
+  .basebg {
+    @apply bg-gray-200 size-6 rounded-full flex items-center justify-center;
+  }
+  /* batch */
+  .batch {
+    @apply md:ps-36 ps-5 md:pe-20 pe-5 mb-20 md:mb-52 md:py-8 md:relative;
+  }
+  .batchbg {
+    @apply md:absolute md:top-0 md:end-10 md:z-50 md:scale-90 scale-75 md:bg-transparent bg-slate-600 rounded;
+  }
+  .batchdiv {
+    @apply border-b border-b-[#F9CCC7] md:pb-8 pb-5;
+  }
+  .batchtext {
+    @apply md:text-5xl font-bold text-[#2D3142] text-2xl;
+  }
+  .batchoptn {
+    @apply flex flex-wrap justify-between md:pe-64;
+  }
+  .batchbtn {
+    @apply border border-[#232323] rounded-full py-1 md:px-5 px-2 text-xs md:text-base dark:text-white;
+  }
+  /* course */
+  .coursediv {
+    @apply md:mx-28 mx-5 grid grid-cols-12 shadow-lg rounded-lg gap-y-10 md:gap-y-0 dark:bg-gray-700;
+  }
+  .coursedivnv {
+    @apply md:col-span-4 col-span-12 bg-[#2D3142] md:p-6 p-4 md:rounded-s-lg rounded-t-lg md:rounded-none md:relative;
+  }
+  .coursetext2 {
+    @apply md:text-4xl text-2xl font-bold text-white md:py-8 py-4;
+  }
+  .courseflex {
+    @apply flex items-center justify-between md:pb-8 pb-4;
+  }
+  .coursebtndiv {
+    @apply md:gap-x-8 gap-x-3 flex md:pb-0 pb-8;
+  }
+  .coursepara {
+    @apply text-white text-wrap md:bottom-12 md:absolute pb-6 md:pb-0 text-[14px] md:text-base;
+  }
+  .coursedivwht {
+    @apply md:col-span-8 col-span-12 md:p-6 p-4;
+  }
+  .coursetext3 {
+    @apply md:text-2xl text-lg font-bold text-[#F9CCC7];
+  }
+  .coursetextp {
+    @apply md:pb-5 text-wrap pb-3 text-[14px] md:text-base dark:text-white;
+  }
+  .courseflexl {
+    @apply flex flex-col md:gap-5 gap-3 md:pb-8 pb-5;
+  }
+  .courseflexitm {
+    @apply flex items-center md:gap-3 gap-2;
+  }
+  .coursecheckbg {
+    @apply bg-[#F9CCC7] md:size-10 size-7 rounded-full flex items-center justify-center;
+  }
+  .coursecheckp {
+    @apply w-11/12 text-wrap text-xs md:text-[14px] dark:text-white;
+  }
+  .coursebtndiv {
+    @apply flex flex-wrap md:gap-5 gap-2 md:pb-12 pb-7;
+  }
+  .cinfodiv {
+    @apply flex flex-col md:gap-4 gap-2 pb-5;
+  }
+  .infoflex {
+    @apply flex items-center gap-2 md:gap-3;
+  }
+  .infobg {
+    @apply md:size-2 size-1 rounded-full bg-[#F9CCC7];
+  }
+  /* course1 */
+  .course1 {
+    @apply relative md:pb-64 pb-28;
+  }
+  .courseimg1 {
+    @apply absolute z-50 bottom-0 px-20 md:px-48;
+  }
+  /* course2 */
+  .course2 {
+    @apply relative md:pb-80 pb-28;
+  }
+  .courseimg2 {
+    @apply absolute -z-10 bottom-0 px-20 md:px-48;
+  }
+  .dka {
+    @apply;
+  }
+  .dka {
+    @apply;
+  }
+  .dka {
+    @apply;
+  }
+  .dka {
+    @apply;
+  }
+  .dka {
+    @apply;
+  }
+  .dka {
+    @apply;
+  }
+  .dka {
+    @apply;
+  }
+}
